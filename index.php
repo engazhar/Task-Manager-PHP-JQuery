@@ -58,7 +58,7 @@ if(!isset($_SESSION['user_id']))
 }else{
 ?>
   <h2>Dashboard</h2>
-  <a class="btn btn-primary" href="task.php?action=logout">Logout</a>
+  <a class="btn btn-primary" href="index.php?action=logout">Logout</a>
 <?php
 }
 ?>

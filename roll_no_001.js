@@ -1,10 +1,4 @@
-function loadcontainer(file){
-    fetch(file)
-    .then(response=> response.text())
-    .then(text=> document.getElementById('app').innerHTML = text);
-}
-
-
+// Login AjaX Script
 $(document).ready(function () {
     $("#login").submit(function (event) {
         event.preventDefault();

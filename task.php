@@ -200,7 +200,7 @@ function list_users(){
 
 /***** GET & POST ROUTES  *****/
 
-// User Login Action
+// Method POST Routes
 if(isset($_POST['action']) && $_POST['action']=="login_user"){
     $response = [];
     $post_data = $_POST;
@@ -279,7 +279,7 @@ if(isset($_POST['action']) && $_POST['action']=="delete_user"){
     $response = [];
     $post_data = $_POST;
 
-    //Expecting Fields For User Registeration
+    //Expecting Fields For User Delete
     $fields = ['user_id'];
     $validation = field_validator($fields, $post_data);
     if($validation['error']){
@@ -298,7 +298,7 @@ if(isset($_POST['action']) && $_POST['action']=="delete_user"){
     }
 }
 
-// Anoymous User Routes
+// Method GET Routes
 if(isset($_GET['action']) && $_GET['action'] != ""){
     switch ($_GET['action']) {
         case "all_user":
