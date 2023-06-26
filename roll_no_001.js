@@ -7,7 +7,6 @@ $(document).ready(function () {
             user_password : $("#user_password").val(),
             action : $('#login').attr('action')
         };
-        
         $.ajax({
             type: "POST",
             url: "task.php",

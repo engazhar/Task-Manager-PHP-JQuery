@@ -24,6 +24,7 @@
   border-color: red;
     outline: 0;
 }
+
 </style>
 </head>
 <body>
